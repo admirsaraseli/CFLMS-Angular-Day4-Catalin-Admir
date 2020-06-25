@@ -1,0 +1,17 @@
+<div class="container row row-cols-1 row-cols-md-3 mx-auto">
+	<div class="col mb-4" *ngFor="let place of places">
+		<div class="card px-1 py-1" >
+			<img src="assets/img/{{place.image}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">{{ place.name }}</h5>
+				<p class="card-text"> {{place.address}}</p>
+			</div>
+			<div class="card-footer">
+				<small class="text-muted">
+					<p>From Admir, {{ place.date }}</p>
+					<span class="bv-rating-stars-on bv-rating-stars bv-width-from-rating-stats-90" aria-hidden="true">★★★★★</span>
+				</small>
+			</div>
+		</div>
+	</div>
+</div>

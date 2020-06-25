@@ -1,0 +1,40 @@
+<div class="container  mx-auto mt-4 bg-transparent px-4 py-4">
+	<form  [formGroup]="checkoutForm " (ngSubmit)="onSubmit(checkoutForm.value)">
+		<div class="form-row mb-4 mx-auto justify-content-center">
+			<div class="col-sm-4">
+				<label class="font-weight-bold">First Name:</label>
+				<input class="form-control" type="text" formControlName="firstName">
+		 	</div>
+		 	<div class="col-sm-4 ">
+				<label class="font-weight-bold">Last Name:</label>
+				<input class="form-control" type="text" formControlName="lastName">
+			</div>
+		</div>	
+		<div class="form-row mb-4 mx-auto justify-content-center">
+			<div class="col-sm-4 ">	
+	    		<label class="font-weight-bold">Email:</label>
+				<input class="form-control" type="email" formControlName="email">
+			</div>
+			<div class="col-sm-4 ">
+				<label class="font-weight-bold">Phone Number:</label>
+				<input class="form-control" type="text" formControlName="telnumber">
+			</div>
+		</div>
+		<div class="form-row mb-4 mx-auto justify-content-center">
+			<div class="col-sm-7 ">
+				<label class="font-weight-bold">Address:</label>
+				<input class="form-control" type="text" formControlName="address">
+			</div>
+		</div>	
+		<div class="form-row mb-4 mx-auto justify-content-center">
+			<div class="col-sm-7 ">
+				<label class="font-weight-bold">Your message:</label>
+				<textarea class="form-control" type="text" formControlName="textarea">	
+				</textarea>
+			</div>
+		</div>
+		<div class="form-row mb-4 mx-auto justify-content-center">
+			<input  type="submit" class="btn btn-dark btn-lg" value="Submit">
+		</div>
+	</form>
+</div>
